@@ -43,16 +43,7 @@ The portfolio website is built using Flutter, a powerful open-source UI software
 - [url_launcher](https://pub.dev/packages/url_launcher): Enables easy integration with external links, allowing visitors to quickly navigate to external resources.
 - [font_awesome_flutter](https://pub.dev/packages/font_awesome_flutter): Introduces a wide variety of customizable icons from the FontAwesome library, enhancing the visual representation of the website's features.
 
-## Getting Started
 
-To explore and interact with the portfolio website on your local machine, follow these steps:
-
-1. **Clone the Repository:**
-   git clone https://github.com/Hamad-Anwar/Flutter-Responsive-Portfolio-WebApp.git
-2. **Install Dependencies:**
-   flutter pub get
-3. **Run Application**
-   flutter run
 
 ## Usage Guide
 
