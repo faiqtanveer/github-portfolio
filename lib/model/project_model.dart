@@ -1,57 +1,111 @@
 class Project {
   final String name;
-  final String description;
-  final String image;
-  final String link;
-  Project(this.name, this.description, this.image, this.link);
+  final String shortDescription;
+  final String detailedDescription;
+  final String thumbnailImage;
+  final List<String> screenshots;
+  final String githubLink;
+  final List<String> technologies;
+
+  Project({
+    required this.name,
+    required this.shortDescription,
+    required this.detailedDescription,
+    required this.thumbnailImage,
+    required this.screenshots,
+    required this.githubLink,
+    this.technologies = const [],
+  });
 }
 
+// Add projects one by one to this list
 List<Project> projectList = [
+
+  //SIGNER MOBILE APP
   Project(
-    'Coffee Application',
-    'Presenting "Coffee" - a Flutter UI application that invites you to indulge in a delightful coffee adventure. Immerse yourself in the world of rich aroma and flavor as you browse through an exquisite selection of specialty coffees. With a user-friendly interface, exploring different blends and discovering their unique details becomes a delightful experience.',
-    'assets/images/coffee.png',
-    'https://github.com/Hamad-Anwar/Coffe-Shop-Beautifull-UI',
+    name: 'IamSigner Application',
+    shortDescription: 'A state-of-the-art digital signature app for secure document signing and management.',
+    detailedDescription: '''Introducing our state-of-the-art Digital Signature App, revolutionizing the way you sign and manage documents in the digital landscape. This robust application is designed to provide a seamless, secure, and efficient solution for individuals, professionals, and businesses alike.
+
+Key Features:
+
+• Advanced Encryption Technology
+Our Digital Signature App employs cutting-edge encryption techniques to ensure the highest level of security for your digital signatures. Every signature is uniquely encoded, making it tamper-proof and safeguarding the authenticity and integrity of your documents.
+
+• Legally Binding Signatures
+Rest easy knowing that the signatures generated through our app hold legal validity. We adhere to industry standards to create signatures that meet the legal requirements for various documents, including contracts, agreements, and other essential paperwork.
+
+• User-Friendly Interface
+We understand the importance of simplicity in user interfaces. Our app boasts an intuitive design, making it easy for users of all levels of technical expertise to navigate and utilize its features effortlessly. Streamline your workflow with a few taps on your device.
+
+• Multi-Platform Compatibility
+Whether you're using a smartphone, tablet, or desktop computer, our Digital Signature App is optimized for a seamless experience across multiple platforms. Access your documents and sign with ease, regardless of your preferred device.
+
+• Cloud Integration
+Embrace the convenience of cloud storage by seamlessly integrating your signed documents with popular cloud services. Access your signed files from anywhere, collaborate with others, and maintain a centralized repository for all your important documents.
+
+• Audit Trail and Document Tracking
+Transparency is key, and our app includes a comprehensive audit trail feature. Track every step of the signing process, including who signed, when, and any changes made to the document. Stay in control and keep a detailed record of your transactions.
+
+• Customizable Signature Styles
+Personalize your digital signature to reflect your unique identity. Choose from a variety of styles and fonts to create a signature that aligns with your professional image.
+
+• Offline Signing Capability
+Enjoy the flexibility of signing documents even when offline. Our app allows you to sign documents without an internet connection, ensuring that you can complete transactions anytime, anywhere.
+
+• Notification Alerts
+Stay informed about the status of your documents with real-time notification alerts. Receive updates on when your document has been viewed, signed, or if any changes have occurred.
+
+• Comprehensive Customer Support
+Our commitment to customer satisfaction extends beyond the app itself. Benefit from responsive customer support ready to assist you with any queries, technical issues, or guidance on utilizing the app's features to their fullest potential.
+
+In a world that demands efficiency, security, and flexibility, our Digital Signature App stands at the forefront, empowering users to sign documents confidently, securely, and with unparalleled convenience.''',
+    thumbnailImage: 'assets/images/iamsigner.png',
+    screenshots: [
+      'assets/images/iamsigner_screen1.png',
+      'assets/images/iamsigner_screen2.png',
+      'assets/images/iamsigner_screen3.png',
+      'assets/images/iamsigner_screen4.png',
+
+    ],
+    githubLink: 'https://iamsigner.com/',
+    technologies: ['Flutter', 'Dart', 'Encryption', 'Cloud Integration', 'Digital Signatures'],
   ),
+
+
+  // MOBILE-REPORT APP
   Project(
-    'Car Controller Application UI',
-    'Car Control Dashboard is a user-friendly mobile application built using Flutter and powered by GetX for efficient state management. Enjoy a modern and intuitive design that adapts to various screen sizes, Interact with dynamic car controls, including speed, steering, and temperature. Realistic animations enhance the visual appeal, making it feel like you are controlling a real car!',
-    'assets/images/car.png',
-    'https://github.com/Hamad-Anwar/Car-Controller-Getx-Flutter',
+    name: 'MobileReport - PDF Reports',
+    shortDescription: 'Professional PDF report creation tool for construction documentation with image annotations.',
+    detailedDescription: '''Opret MobileReport nemt og hurtigt
+
+Mobilereport.dk tilbyder et værktøj, der gør det muligt at oprette professionelle PDF-rapporter baseret på billeder med annoteringer, som kan anvendes til at forklare potentielle problemer på f.eks. byggesager.
+
+About MobileReport:
+Mobilereport.dk er skabt med et enkelt formål: at forenkle dokumentation og rapportering i byggebranchen. Vi ved, hvor udfordrende det kan være at holde styr på alle detaljer på en byggeplads, hvad enten det drejer sig om små reparationer eller store byggeprojekter. Med vores app får du et professionelt værktøj, der gør det nemt og hurtigt at oprette visuelle rapporter, forklare problemer og finde løsninger.
+
+Key Features:
+• Create professional PDF reports quickly and easily
+• Add image annotations to explain issues clearly
+• Perfect for construction site documentation
+• Visual reporting for better communication
+• Simplified workflow for construction professionals
+• Track details on building projects efficiently
+• Easy problem identification and explanation
+• Professional documentation tool
+• Streamlined reporting process
+• Ideal for small repairs and large construction projects
+
+MobileReport makes construction documentation efficient, professional, and accessible for everyone in the construction industry.''',
+    thumbnailImage: 'assets/images/mobileReport.png',
+    screenshots: [
+      'assets/images/mobileReport_screen1.png',
+      'assets/images/mobileReport_screen2.png',
+      'assets/images/mobileReport_screen3.png',
+    ],
+    githubLink: 'https://mobilereport.dk/',
+    technologies: ['Flutter', 'PDF Generation', 'Image Annotation', 'Construction Tech'],
   ),
-  Project(
-      'Neumorphic Clockify',
-      'Neumorphic TimeKit is an open-source project that brings together the elegance of a beautifully designed alarm system, an analog clock with a neumorphic touch, and a feature-rich stopwatch. Whether you\'re looking for a functional alarm tool, a stylish desktop clock, or a precise stopwatch, TimeKit has you covered.',
-      'assets/images/alarm.jpg',
-      'https://github.com/Hamad-Anwar/Neumorphic-Analog-Clockify'),
-  Project(
-      'CUI Aider',
-      'CUI AIDER is an extraordinary application that brings together augmented reality (AR), a robust student portal, intuitive class management, and a comprehensive GPA system, providing an all-encompassing solution for students.Using AR technology, CUI AIDER offers an immersive experience, allowing users to explore the complete university campus virtually. Through AR, students can visualize buildings, navigate with interactive directions, and gain a better understanding of their surroundings.',
-      'assets/images/cui.png',
-      'https://github.com/Hamad-Anwar/'),
-  Project(
-      'Flutter Music Streaming Application',
-      'A Flutter music streaming application that allows users to play audio files from local storage. The app features a beautiful neumorphic UI design and provides a smooth user experience for browsing and playing music.',
-      'assets/images/player.png',
-      'https://github.com/Hamad-Anwar/Neumorphic-Music_Player-Flutter'),
-  Project(
-      'Food Recipe App',
-      'This repository contains a Flutter implementation of a Food Recipe app with a captivating introduction section and impressive animations. It also features a signup and signin page with animations, elegantly presented on a bottom sheet.',
-      'assets/images/recipe.png',
-      'https://github.com/Hamad-Anwar/Food-Recipe-App-Flutter'),
-  Project(
-      'Task Sync Pro',
-      'Welcome to the Beautiful Task Scheduler App repository! This Flutter-based task management application combines elegant design with a robust backend, ensuring a seamless and organized task management experience. From stunning UI to real-time synchronization, this app has you covered.',
-      'assets/images/task.png',
-      'https://github.com/Hamad-Anwar/Task-Sync-Pro-Flutter'),
-  Project(
-      'Flutter Chat Application with Firebase',
-      'Welcome to our innovative Flutter chat application! This feature-rich messaging platform allows users to connect and communicate seamlessly through text and images. The app is built using Flutter for the frontend and integrates with Firebase for backend services, including authentication, real-time database, and storage.',
-      'assets/images/chat.png',
-      'https://github.com/Hamad-Anwar/Messenger-App-Backend-Firebase'),
-  Project(
-      'Doctor Appointment Application',
-      'Introducing the extraordinary "Doctor Appointment System" - a state-of-the-art Flutter UI application that redefines healthcare accessibility and efficiency. Seamlessly crafted, this app empowers users to effortlessly select doctors based on categories, engage in smooth messaging, and access detailed profiles.',
-      'assets/images/doctor.png',
-      'https://github.com/Hamad-Anwar/Doctor-Appointment-Application-UI'),
+
+
 ];
