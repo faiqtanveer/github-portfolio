@@ -238,10 +238,10 @@ h1.title .l2{display:block;color:var(--muted)}
 .job p{color:var(--muted);font-size:15px;max-width:62ch}
 
 /* projects */
-.featured{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.featured{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;align-items:start}
 .pcard{background:linear-gradient(165deg,var(--surface),var(--ink-2));border:1px solid var(--line);
   border-radius:20px;padding:26px;position:relative;overflow:hidden;transition:transform .35s cubic-bezier(.2,.7,.3,1),border-color .35s;
-  min-height:260px;display:flex;flex-direction:column}
+  display:flex;flex-direction:column}
 .pcard::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .35s;
   background:radial-gradient(420px 200px at var(--mx,50%) var(--my,0%),rgba(58,215,196,.12),transparent 70%)}
 .pcard:hover{transform:translateY(-6px);border-color:var(--line-strong)}
@@ -257,7 +257,7 @@ h1.title .l2{display:block;color:var(--muted)}
 .g-joet{background:linear-gradient(145deg,#36d39a,#127a52)}
 .g-bullseye{background:linear-gradient(145deg,#9b6cff,#5a2fb0)}
 .pc-body{flex:1;display:flex;flex-direction:column}
-.tag{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em;margin-bottom:auto}
+.tag{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.08em}
 .pcard h3{font-family:var(--display);font-size:21px;font-weight:600;margin:14px 0 9px}
 .pcard.big h3{font-size:27px}
 .pcard p{color:var(--muted);font-size:14.5px;line-height:1.6}
@@ -636,6 +636,7 @@ footer{border-top:1px solid var(--line);padding:34px 0}
     <p>Open to Flutter Developer roles and freelance projects. The fastest way to reach me is email — I usually reply within a day.</p>
     <div class="contact-links">
       <a href="mailto:faiqtanveer28@gmail.com" class="btn btn-primary">faiqtanveer28@gmail.com</a>
+      <a href="tel:+923154152935" class="btn btn-ghost">+92 315 4152935</a>
       <a href="https://linkedin.com/in/faiqtanveer" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
     </div>
   </div>
