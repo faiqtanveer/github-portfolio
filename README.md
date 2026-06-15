@@ -68,3 +68,15 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 ### Designed and developed with ❤️ by [Muhammad Faiq Tanveer](https://www.linkedin.com/in/faiqtanveer/).
+
+
+///# 1. make sure the flagged build actually succeeded first
+flutter build web --release --base-href "/github-portfolio/"
+
+# 2. copy the fresh build output into the repo root (overwrites old files)
+cp -R build/web/. .
+
+# 3. commit and push
+git add -A
+git commit -m "Deploy: rebuild web with new splash + portfolio"
+git push
