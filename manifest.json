@@ -1,11 +1,11 @@
 {
-    "name": "flutter_portfolio",
-    "short_name": "flutter_portfolio",
+    "name": "Muhammad Faiq Tanveer – Portfolio",
+    "short_name": "Faiq Tanveer",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
+    "background_color": "#0A0F12",
+    "theme_color": "#0A0F12",
+    "description": "Senior Flutter Developer portfolio",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
