@@ -125,7 +125,7 @@ class _SplashViewState extends State<SplashView>
                   ),
                   const SizedBox(height: 10),
                   Text(
-                    'FLUTTER DEVELOPER',
+                    'SENIOR FLUTTER DEVELOPER',
                     style: GoogleFonts.jetBrainsMono(
                       fontSize: 12,
                       color: _aqua,

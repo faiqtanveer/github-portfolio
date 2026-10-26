@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
-        scaffoldBackgroundColor: bgColor,
+        scaffoldBackgroundColor: const Color(0xFF0A0F12),
         useMaterial3: true,
         textTheme: GoogleFonts.openSansTextTheme(Theme.of(context).textTheme)
             .apply(bodyColor: Colors.white,)
@@ -34,7 +34,8 @@ class MyApp extends StatelessWidget {
         ),
       ),
 
-      home: SplashView()
+      title: 'Muhammad Faiq Tanveer – Senior Flutter Developer',
+      home: const SplashView(),
     );
   }
 }
